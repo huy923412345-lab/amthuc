@@ -1,0 +1,293 @@
+/* Cài đặt chung */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #d35400;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+/* Thanh điều hướng - FLEX */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #333;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* HOVER */
+nav a:hover {
+    background-color: #d35400;
+    transform: translateY(-3px);
+}
+
+/* Focus */
+nav a:focus {
+    outline: 3px solid #ffd166;
+}
+
+/* Skip link */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 10px;
+    background-color: #000;
+    color: white;
+    padding: 12px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    left: 10px;
+}
+
+/* Nội dung */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* Trang chủ */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.hero div {
+    flex: 1;
+}
+
+.hero img {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #d35400;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: #d35400;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #a04000;
+    transform: scale(1.05);
+}
+
+/* Giới thiệu */
+.gioi-thieu {
+    background-color: white;
+    border: 2px solid #f0c095;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* Tiêu đề */
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* GRID */
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Box Model */
+.food-card {
+    background-color: white;
+    border: 2px solid #ddd;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.food-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* nth-child */
+.food-card:nth-child(2) {
+    border-radius: 30px;
+}
+
+.food-card:nth-child(3) {
+    border-radius: 5px;
+}
+
+.food-card:nth-child(4) {
+    border-radius: 40px;
+}
+
+.food-card:nth-child(5) {
+    border-radius: 10px 30px;
+}
+
+/* Hình ảnh */
+.food-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #d35400;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+/* nth-child cho ảnh */
+.food-card:nth-child(2) img {
+    border-radius: 50%;
+}
+
+.food-card:nth-child(3) img {
+    border-radius: 30px 5px;
+}
+
+.food-card:nth-child(4) img {
+    border-radius: 5px 30px;
+}
+
+/* Trang công thức */
+.recipe {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    background-color: white;
+    padding: 25px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+}
+
+.recipe img {
+    width: 45%;
+    height: 350px;
+    object-fit: cover;
+    border: 5px solid #d35400;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.recipe div {
+    flex: 1;
+}
+
+/* Form */
+.form-section {
+    margin-top: 40px;
+    background-color: white;
+    padding: 25px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #d35400;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    background-color: #d35400;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #a04000;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .hero,
+    .recipe {
+        flex-direction: column;
+    }
+
+    .hero img,
+    .recipe img {
+        width: 100%;
+    }
+
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+}
