@@ -1,4 +1,4 @@
-/* Cài đặt chung */
+
 * {
     box-sizing: border-box;
 }
@@ -14,7 +14,7 @@ body {
     color: #333;
 }
 
-/* Header */
+
 header {
     background-color: #d35400;
     color: white;
@@ -26,7 +26,7 @@ header h1 {
     margin: 0 0 10px;
 }
 
-/* Thanh điều hướng - FLEX */
+
 nav {
     display: flex;
     justify-content: center;
@@ -43,18 +43,15 @@ nav a {
     border-radius: 8px;
 }
 
-/* HOVER */
 nav a:hover {
     background-color: #d35400;
     transform: translateY(-3px);
 }
 
-/* Focus */
 nav a:focus {
     outline: 3px solid #ffd166;
 }
 
-/* Skip link */
 .skip-link {
     position: absolute;
     left: -9999px;
@@ -69,14 +66,12 @@ nav a:focus {
     left: 10px;
 }
 
-/* Nội dung */
 main {
     max-width: 1100px;
     margin: auto;
     padding: 30px 20px;
 }
 
-/* Trang chủ */
 .hero {
     display: flex;
     align-items: center;
@@ -97,7 +92,6 @@ main {
     border-radius: 20px;
 }
 
-/* Button */
 .button {
     display: inline-block;
     background-color: #d35400;
@@ -113,7 +107,7 @@ main {
     transform: scale(1.05);
 }
 
-/* Giới thiệu */
+
 .gioi-thieu {
     background-color: white;
     border: 2px solid #f0c095;
@@ -121,20 +115,17 @@ main {
     border-radius: 15px;
 }
 
-/* Tiêu đề */
 .title {
     text-align: center;
     margin-bottom: 30px;
 }
 
-/* GRID */
 .food-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
-/* Box Model */
 .food-card {
     background-color: white;
     border: 2px solid #ddd;
@@ -144,13 +135,11 @@ main {
     transition: 0.3s;
 }
 
-/* HOVER */
 .food-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* nth-child */
 .food-card:nth-child(2) {
     border-radius: 30px;
 }
@@ -167,7 +156,6 @@ main {
     border-radius: 10px 30px;
 }
 
-/* Hình ảnh */
 .food-card img {
     width: 100%;
     height: 200px;
@@ -177,7 +165,6 @@ main {
     border-radius: 15px;
 }
 
-/* nth-child cho ảnh */
 .food-card:nth-child(2) img {
     border-radius: 50%;
 }
@@ -188,9 +175,7 @@ main {
 
 .food-card:nth-child(4) img {
     border-radius: 5px 30px;
-}
 
-/* Trang công thức */
 .recipe {
     display: flex;
     gap: 40px;
@@ -214,7 +199,6 @@ main {
     flex: 1;
 }
 
-/* Form */
 .form-section {
     margin-top: 40px;
     background-color: white;
@@ -261,7 +245,6 @@ button:hover {
     background-color: #a04000;
 }
 
-/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -270,7 +253,6 @@ footer {
     margin-top: 40px;
 }
 
-/* Responsive */
 @media (max-width: 700px) {
 
     nav {
